@@ -59,3 +59,14 @@ unsigned short Human::getHeight() const
 {
     return height;
 }
+
+void Human::getStatus()
+{
+    cout << "Human\n";
+}
+
+void Human::print()
+{
+    cout <<"Surname: "<<surname <<" Name: "<< name << " Patronymic: " << patronymic << "\n" <<
+        "Age: " << age << " Weight: " << weight << " Height: " << height << endl;
+}

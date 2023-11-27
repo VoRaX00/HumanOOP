@@ -1,6 +1,8 @@
-#include "Human.h"
+#include "Student.h"
 
 int main(){
     Human h("Kerzhakov", "Nikita","Alexeevich");
-    cout << h.getSurname() << " " << h.getName() << " " << h.getPatronymic() << endl;
+    h.print();
+    Student student("Kerzhakov", "Nikita", "Alexeevich",19,90,190,4.444);
+    student.print();
 }

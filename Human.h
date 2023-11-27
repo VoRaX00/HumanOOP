@@ -35,7 +35,11 @@ public:
 
     unsigned short getHeight() const;
 
-private:
+    virtual void getStatus();
+
+    virtual void print();
+
+protected:
     string name;
     string surname;
     string patronymic;
