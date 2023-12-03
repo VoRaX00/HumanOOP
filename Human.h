@@ -1,3 +1,4 @@
+#pragma once
 #include <iostream>
 
 using namespace std;
@@ -8,7 +9,7 @@ public:
     Human(string _surname, string _name, string _patronymic) :
     surname(_surname), name(_name), patronymic(_patronymic){}
 
-    Human(string _surname, string _name, string _patronymic,unsigned short _age, unsigned short _weight, unsigned short _height)
+    Human(string _surname, string _name, string _patronymic, u_int16_t _age, u_int16_t _weight, u_int16_t _height)
     : surname(_surname), name(_name), patronymic(_patronymic), age(_age), weight(_weight), height(_height){}
 
     void setName(const string& _name);
@@ -17,11 +18,11 @@ public:
 
     void setPatronymic(const string& _patronymic);
 
-    void setAge(const unsigned short& _age);
+    void setAge(const u_int16_t& _age);
 
-    void setWeight(const unsigned short& _weight);
+    void setWeight(const u_int16_t& _weight);
 
-    void setHeight(const unsigned short& _height);
+    void setHeight(const u_int16_t& _height);
 
     string getName() const;
 
@@ -29,11 +30,11 @@ public:
 
     string getPatronymic()const;
 
-    unsigned short getAge() const;
+    u_int8_t getAge() const;
 
-    unsigned short getWeight() const;
+    u_int8_t getWeight() const;
 
-    unsigned short getHeight() const;
+    u_int8_t getHeight() const;
 
     virtual void getStatus();
 
@@ -43,7 +44,7 @@ protected:
     string name;
     string surname;
     string patronymic;
-    unsigned short age;
-    unsigned short weight;
-    unsigned short height;
+    u_int16_t age;
+    u_int16_t weight;
+    u_int16_t height;
 };

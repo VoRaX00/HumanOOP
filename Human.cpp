@@ -45,17 +45,17 @@ string Human::getPatronymic() const
     return patronymic;
 }
 
-unsigned short Human::getAge() const
+u_int8_t Human::getAge() const
 {
     return age;
 }
 
-unsigned short Human::getWeight() const
+u_int8_t Human::getWeight() const
 {
     return weight;
 }
 
-unsigned short Human::getHeight() const
+u_int8_t Human::getHeight() const
 {
     return height;
 }

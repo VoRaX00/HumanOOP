@@ -1,8 +1,8 @@
 #include "Student.h"
 
 Student::Student(string _surname, string _name, string _patronymic, 
-unsigned short _age, unsigned short _weight, 
-unsigned short _height, double rau)
+u_int16_t _age, u_int16_t _weight, 
+u_int16_t _height, string _institut, double rau)
 {
     surname = _surname;
     name = _name;
@@ -11,6 +11,7 @@ unsigned short _height, double rau)
     weight = _weight;
     height = _height;
     RAU = rau;
+    institut = _institut;
 }
 
 void Student::getStatus()
@@ -21,11 +22,11 @@ void Student::getStatus()
 void Student::print()
 {
     cout <<"Surname: "<<surname <<" Name: "<< name << " Patronymic: " << patronymic << endl <<
-        "Age: " << age << " Weight: " << weight << " Height: " << height << endl <<
-        "RAU: "<<RAU << endl;
+        "Age: " << age << " Weight: " << weight << " Height: " << height << endl << 
+        "Institut: "<< institut<< " " << "RAU: "<<RAU << endl;
 }
 
-unsigned short Student::getRAU() const
+double Student::getRAU() const
 {
     return RAU;
 }
@@ -33,4 +34,14 @@ unsigned short Student::getRAU() const
 void Student::setRAU(const double &rau)
 {
     RAU = rau;
+}
+
+string Student::getInstitut() const
+{
+    return institut;
+}
+
+void Student::setInstititut(const string& _institut)
+{
+    institut = _institut;
 }
